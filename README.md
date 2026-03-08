@@ -1,2 +1,2 @@
 # DSA-Assignments-Sem-2
-This entials all assignments assigned during throught the semester.
+This entails all the assignments assigned throughout the semester in data structures and algorithms.
