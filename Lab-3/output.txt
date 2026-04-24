@@ -1,0 +1,45 @@
+
+  Sorting Performance Analyzer (SPA)
+  Data Structures | Unit 3 Assignment
+
+=================================================================
+  Correctness Check | Input: [5, 2, 9, 1, 5, 6]
+  Expected         : [1, 2, 5, 5, 6, 9]
+=================================================================
+  Insertion Sort : [1, 2, 5, 5, 6, 9]  PASS
+  Merge Sort     : [1, 2, 5, 5, 6, 9]  PASS
+  Quick Sort     : [1, 2, 5, 5, 6, 9]  PASS
+=================================================================
+
+=================================================================
+  Timing Results (milliseconds)
+=================================================================
+
+  Size: 1000
+  Input        Insertion Sort   Merge Sort   Quick Sort
+  ------------------------------------------------------
+  random             13.198 ms     1.142 ms     0.741 ms
+  sorted              0.062 ms      0.82 ms     0.574 ms
+  reverse            27.767 ms     0.792 ms     0.892 ms
+
+  Size: 5000
+  Input        Insertion Sort   Merge Sort   Quick Sort
+  ------------------------------------------------------
+  random            362.486 ms     6.873 ms     4.908 ms
+  sorted              0.317 ms     4.605 ms     3.556 ms
+  reverse           733.809 ms     4.769 ms    17.111 ms
+
+  Size: 10000
+  Input        Insertion Sort   Merge Sort   Quick Sort
+  ------------------------------------------------------
+  random           1447.093 ms    14.848 ms    10.133 ms
+  sorted              0.649 ms    17.255 ms      8.26 ms
+  reverse            2928.6 ms     9.652 ms    13.268 ms
+
+=================================================================
+
+  Algorithm Properties:
+  Insertion Sort : Stable   | In-place     | O(n^2) avg | O(n) best
+  Merge Sort     : Stable   | Out-of-place | O(n log n) always
+  Quick Sort     : Unstable | In-place     | O(n log n) avg | O(n^2) worst
+
