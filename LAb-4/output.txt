@@ -1,0 +1,72 @@
+
+  Data Management Mini Toolkit (DMMT)
+  Data Structures | Unit 4 Assignment
+
+=======================================================
+  TASK 1: Binary Search Tree
+=======================================================
+
+  Inserted: [50, 30, 70, 20, 40, 60, 80]
+  Inorder  : [20, 30, 40, 50, 60, 70, 80]
+
+  Search 20 -> True
+  Search 90 -> False
+
+  Inserted 65  (now node 60 has one child: 65)
+  Inorder  : [20, 30, 40, 50, 60, 65, 70, 80]
+
+  Delete 20  (Case 1: leaf node)
+  Inorder  : [30, 40, 50, 60, 65, 70, 80]
+
+  Delete 60  (Case 2: one child — child is 65)
+  Inorder  : [30, 40, 50, 65, 70, 80]
+
+  Delete 30  (Case 3: two children — 20 was removed, children are 40 on left, 65 side on right)
+  Inorder  : [40, 50, 65, 70, 80]
+
+=======================================================
+  TASK 2: Graph BFS and DFS
+=======================================================
+
+  Adjacency List:
+    A -> B(2), C(4)
+    B -> D(7), E(3)
+    C -> E(1), F(8)
+    D -> F(5)
+    E -> D(2), F(6)
+    F -> 
+
+  BFS from A: A -> B -> C -> D -> E -> F
+  DFS from A: A -> B -> D -> F -> E -> C
+
+=======================================================
+  TASK 3: Hash Table with Separate Chaining
+=======================================================
+
+  Table size = 5   |   hash(key) = key % 5
+  Inserting keys: [10, 15, 20, 7, 12]
+    insert(10, 'ten')     -> bucket [0]
+    insert(15, 'fifteen') -> bucket [0]
+    insert(20, 'twenty')  -> bucket [0]
+    insert(7,  'seven')   -> bucket [2]
+    insert(12, 'twelve')  -> bucket [2]
+
+  Hash Table Buckets:
+    [0]: (10, ten) -> (15, fifteen) -> (20, twenty) -> None
+    [1]: empty
+    [2]: (7, seven) -> (12, twelve) -> None
+    [3]: empty
+    [4]: empty
+
+  get(10) -> ten
+  get(15) -> fifteen
+  get(7)  -> seven
+
+  Delete key 20 from bucket [0] (same bucket as 10 and 15):
+  Hash Table Buckets:
+    [0]: (10, ten) -> (15, fifteen) -> None
+    [1]: empty
+    [2]: (7, seven) -> (12, twelve) -> None
+    [3]: empty
+    [4]: empty
+
