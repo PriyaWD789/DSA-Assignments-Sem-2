@@ -1,0 +1,44 @@
+
+--- Dynamic Array ---
+[1] (size=1, cap=2)
+[1, 2] (size=2, cap=2)
+Resized to 4
+[1, 2, 3] (size=3, cap=4)
+[1, 2, 3, 4] (size=4, cap=4)
+Resized to 8
+[1, 2, 3, 4, 5] (size=5, cap=8)
+[1, 2, 3, 4, 5, 6] (size=6, cap=8)
+[1, 2, 3, 4, 5, 6, 7] (size=7, cap=8)
+[1, 2, 3, 4, 5, 6, 7, 8] (size=8, cap=8)
+Resized to 16
+[1, 2, 3, 4, 5, 6, 7, 8, 9] (size=9, cap=16)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] (size=10, cap=16)
+Pop: 10
+Pop: 9
+Pop: 8
+[1, 2, 3, 4, 5, 6, 7] (size=7, cap=16)
+
+--- Singly Linked List ---
+30 -> 20 -> 10 -> 40 -> 50 -> 60 -> None
+30 -> 10 -> 40 -> 50 -> 60 -> None
+
+--- Doubly Linked List ---
+10 <-> 20 <-> 30 <-> 40 <-> 50 <-> None
+10 <-> 20 <-> 25 <-> 30 <-> 40 <-> 50 <-> None
+10 <-> 25 <-> 30 <-> 40 <-> 50 <-> None
+10 <-> 25 <-> 30 <-> 40 <-> None
+
+--- Stack ---
+Pop: 30
+Peek: 20
+
+--- Queue ---
+Dequeue: 10
+Front: 20
+
+--- Parentheses ---
+([]) -> True
+([)] -> False
+((( -> False
+ -> True
+{[()]} -> True
